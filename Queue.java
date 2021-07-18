@@ -29,6 +29,24 @@ public class Queue <T extends Object>{
 		}
 	}
 	
+	public void dequeue() {
+		if (size == 0) {
+			System.out.println("Queue is empty, so can't delete the elements.");
+		} else {
+			front++;
+			if (front == capacity - 1) {
+				T deletedElement = array[front - 1];
+				System.out.println("Deleted element is: " + deletedElement);
+				front = 0;
+			} else {
+				T deletedElement = array[front - 1];
+				System.out.println("Deleted element is: " + deletedElement);
+			}
+			size--;
+			rear--;
+		}
+	}
+	
 	public boolean isFull() {
 		if (size == capacity) {
 			return true;

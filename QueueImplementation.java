@@ -7,6 +7,8 @@ public class QueueImplementation {
 		intQueue.enqueue(56);
 		intQueue.enqueue(30);
 		intQueue.enqueue(70);
+		
+		intQueue.dequeue();
 	}
 
 }
