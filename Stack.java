@@ -22,8 +22,30 @@ public class Stack<T extends Object> {
 		System.out.println("Inserting " + element + " to the Stack ");
 	}
 	
+	public T pop() {
+		if (isEmpty()) {
+			System.out.println("Stack is Empty and there is no element to remove");
+			System.exit(1);
+		}
+		System.out.println("removing the value : " + array[top]);
+		return array[top--];
+	}
+
+	public T peek() {
+		if (isEmpty()) {
+			System.exit(1);
+		} else {
+			return array[top];
+		}
+		return null;
+	}
+
 	public boolean isFull() {
 
 		return top == capacity - 1;
+	}
+	
+	public boolean isEmpty() {
+		return top == -1;
 	}
 }
