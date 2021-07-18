@@ -7,6 +7,14 @@ public class StackImplementation {
 		intStack.push(70);
 		intStack.push(30);
 		intStack.push(56);
+		
+		System.out.println("peek value is "+intStack.peek());
+		
+		intStack.pop();
+		intStack.pop();
+		intStack.pop();
+		
+		System.out.println("Peek value is "+ intStack.peek());
 	}
 
 }
