@@ -21,5 +21,7 @@ public class MyLinkedListTest {
 		myLinkedLIst.add(myFirstNode1);
 		myLinkedLIst.append(mySecondNode1);
 		myLinkedLIst.append(myThirdNode1);
+		
+		myLinkedLIst1.insert(mySecondNode1, myThirdNode1);
 	}
 }
