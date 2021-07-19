@@ -23,5 +23,7 @@ public class MyLinkedListTest {
 		myLinkedLIst.append(myThirdNode1);
 		
 		myLinkedLIst1.insert(mySecondNode1, myThirdNode1);
+		
+		myLinkedLIst1.pop();
 	}
 }
