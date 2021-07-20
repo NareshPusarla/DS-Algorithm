@@ -25,5 +25,6 @@ public class MyLinkedListTest {
 		myLinkedLIst1.insert(mySecondNode1, myThirdNode1);
 		
 		myLinkedLIst1.pop();
+		myLinkedLIst1.popLast();
 	}
 }
